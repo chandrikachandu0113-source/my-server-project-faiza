@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faiza Iqra | AI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+      color: #f1f1f1;
+    }
+
+    header {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.3);
+    }
+
+    nav a {
+      color: #f1f1f1;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover { color: #ff9ff3; }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 20px 50px;
+    }
+
+    .hero-text h2 { font-size: 42px; }
+    .hero-text span { color: #ff9ff3; }
+
+    .hero img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ff9ff3;
+      box-shadow: 0 0 25px rgba(255,159,243,0.6);
+      transition: 0.3s;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff9ff3;
+      border: none;
+      color: #000;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    section { padding: 40px 50px; }
+
+    h3 { margin-bottom: 20px; font-size: 30px; }
+
+    .skills, .projects, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .skill-bar {
+      margin-bottom: 15px;
+    }
+
+    .bar {
+      background: #333;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .bar div {
+      height: 10px;
+      background: #ff9ff3;
+    }
+
+    .projects .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .projects .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+    }
+
+    @media(max-width:768px) {
+      .hero { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Faiza Iqra</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Hi, I'm <span>Faiza Iqra</span> 👋</h2>
+    <p>Passionate AI Developer focused on Deep Learning and Computer Vision. I build smart systems that solve real-world problems.</p>
+    <button class="btn">Explore My Work</button>
+  </div>
+  <img src="f.jpeg" alt="Faiza Photo">
+</section>
+
+<section id="about">
+  <h3>About Me</h3>
+  <p>
+    I am an aspiring AI engineer with a strong interest in Deep Learning, Machine Learning, and Computer Vision.
+    I enjoy transforming ideas into intelligent applications that can make an impact in industries like agriculture and automation.
+  </p>
+</section>
+
+<section id="skills" class="skills">
+  <h3>Skills</h3>
+
+  <div class="skill-bar">
+    <p>Python</p>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>Machine Learning</p>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>Deep Learning</p>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>OpenCV</p>
+    <div class="bar"><div style="width:75%"></div></div>
+  </div>
+
+</section>
+
+<section id="projects" class="projects">
+  <h3>Projects</h3>
+
+  <div class="card">
+    <h4>Smart Fruit Quality Assessment System 🍎</h4>
+    <p>
+      A deep learning-powered system that analyzes fruit images and determines their quality.
+      This project highlights the use of CNN models in real-world agricultural applications.
+    </p>
+    <p><strong>Tech:</strong> Python, CNN, OpenCV</p>
+  </div>
+
+  <div class="card">
+    <h4>Future Project 🚀</h4>
+    <p>Add your upcoming AI or ML project here to make your portfolio stronger.</p>
+  </div>
+
+</section>
+
+<section id="contact" class="contact">
+  <h3>Contact</h3>
+  <p>📧 iqrafaiza37@gmail.com</p>
+  <p>Feel free to reach out for collaboration or opportunities!</p>
+</section>
+
+<footer>
+  <p>© 2026 Faiza Iqra | Built with ❤</p>
+</footer>
+
+</body>
+</html>
